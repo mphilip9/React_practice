@@ -1,0 +1,67 @@
+Next-gen javascript (ES6)
+  -the let keyword
+    -use it for var values
+  - the const keyword
+    -use it for constant calues
+  -Not much else was said...
+
+  -Arrow functions
+    const myFnc = () => {
+
+    }
+
+    -Somehow arrow functions helps with the this keyword, it ensures it doesn't change or something to that effect
+    -Good reference for arrow functions here. Basically, arrow functions take the this value from outside the function, which makes
+    them much more predictable
+
+  -Exports and imports (Modules)
+    -Allows you to import/export javascript content from one file to another
+    -There is a difference between default and named imports
+
+  -Classes
+    -classes can have properties and methods (keys with functions as their values)
+
+  -Spread and rest operators ...
+    -spread oeprator
+      -can be used to split up array elements or object properties
+      -THe syntax below will add the elements and properties to the new array/object
+        const newArray = [...oldArray, 1, 2];
+        const newObject = {...oldObject, newProp: 5}
+    -rest operator
+      -Used to merge a list of function parameters into an array
+
+  -Destructuring
+    -easily extract array elements or object properties and store them in variables
+      -for arrays (example)
+        [a, b] = ['Hello', 'Max']
+        console.log(a)//Hello
+        console.log(b) //Max
+      -For objects
+        {name} = {name: 'Max', age: 28}
+          console.log(name)//Max
+          console.log(age)//28
+
+Other features to cover for this course
+
+  -primitive types (numbers, booleans, strings)
+    const number = 1;
+    const num2 = number;
+  -reference types (arrays objects)
+    -Basically, when you create a variable and make a "copy" of it in another variable, all you are doing
+    is assigning a pointer to that new variable which points to the other variable. If you were to change the original
+    variable, that change would also appear in your "copy"
+
+    -THUS, we need to copy arrays and objects in an immutable way, like this:
+      const person = {
+        name: 'Max'
+      }
+
+      const secondPerson = {
+        ...person
+      }
+    -This way copies the properties of the object, thus making a true copy
+
+  -Array functions
+    -Filter, map, reduce, etc.
+
+
