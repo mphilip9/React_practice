@@ -1,0 +1,34 @@
+React Core Syntax
+
+JSX (Javascript and HTML frankesteined together)
+  -
+
+
+
+React Components
+  -Compartmentalizing user interfaces into components
+  -You break up your user interaces into usable components for each different bit of logic.
+    -For example, you may have expense items be one component, a form for entering new data another component, and you COULD even
+    go deeper and split up the expense items into separate compenents as well
+    -SPlit them up into containers, button, etc
+  -Helps with REUSABILITY (DRY - Don't repeat yourself)
+  -Helps with separation of concerns
+    -Split up your code into a number of smaller chunks/functions to outsource logic. This is an extension of DRY
+
+  -React uses a declarative approach to coding
+    -You always define the desired target state and let React figu8re out the actual Javascript DOM instructions
+
+GOOD PRACTICE STANDARDS
+  -Make one file for each react component
+  -Standard syntax for naming components :
+    ExpenseItem.js
+  -You can only have ONE root element per return for each react component. You can return a root element which contains other elements within it, but they must be contained
+  within that root element and not side by side with it
+  -You generally name the parameter for a component props to indicate it contains all the values you will be getting as attributes from you custom element
+
+Notes
+  -Objects cannot be inputted as the data for a variable you are putting into an element in a react component. You will need to convert it first
+  -React ensures every function or component gets one parameter, an object which holds all the received attributes as properties
+
+Props
+  -
